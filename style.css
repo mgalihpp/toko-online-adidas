@@ -1,0 +1,266 @@
+*,
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 64px;
+    color: whitesmoke;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 54px;
+    color: black;
+}
+
+h4 {
+    font-size: 30px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+h6 {
+    font-weight: 700;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+}
+
+/* Header */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0 ,0.1);
+    z-index: 99;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(57, 52, 52);
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,#navbar li a.active {
+    color: aquamarine;
+}
+
+#navbar li a.active::after,#navbar li a:hover::after {
+    content: "";
+    width: 35%;
+    height: 2px;
+    background-color: aquamarine;;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+/* Home */
+
+#banner {
+    background-image: url(foto/banner.jpg);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#banner h4 {
+    padding-bottom: 15px;
+
+}
+
+#banner h1 {
+    color: black;
+    
+}
+
+#banner button {
+    background-image: url(img/button.png);
+    background-color: transparent;
+    color: aquamarine;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#banner button a {
+    color: white;
+    text-decoration: none;
+}
+
+/* fitur */
+
+#fitur {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#fitur .fitur-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#fitur .fitur-box:hover {
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+#fitur .fitur-box img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#fitur .fitur-box h6 {
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: black;
+    background-color: whitesmoke;
+}
+
+#fitur .fitur-box:nth-child(2) h6{
+    background-color: whitesmoke;
+}
+
+/* produk */
+
+#produk-1 {
+    text-align: center;
+}
+
+#produk-1 h2 p {
+    color: black !important;
+}
+
+#produk-1 .produk {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#produk-1 .produk-box {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid rgb(194, 193, 193);
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0 ,0.1);
+    margin: 15px 0;
+    transition: 0.5s ease-in-out;
+    position: relative;
+}
+
+#produk-1 .produk-box:hover {
+    transform: scale(1.05);
+}
+
+#produk-1 .produk-box img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#produk-1 .produk-box .isi {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#produk-1 .produk-box .isi span {
+    color: #465b52;
+    font-size: 12px;
+}
+
+#produk-1 .produk-box .isi h5 {
+    padding-top: 7px;
+    color: black;
+    font-size: 14px;
+}
+
+#produk-1 .produk-box .isi i {
+    font-size: 12px;
+    color: gold;
+}
+
+#produk-1 .produk-box .isi h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: yellowgreen;
+}
+
+#produk-1 .produk-box .cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: whitesmoke;
+    color: black;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
