@@ -19,7 +19,7 @@ h2 {
     font-size: 50px;
     font-weight: bold;
     line-height: 54px;
-    color: black;
+    color: white;
 }
 
 h4 {
@@ -37,12 +37,12 @@ h6 {
 p {
     font-size: 20px;
     font-weight: bold;
-    color: black;
+    color: white;
     margin: 15px 0 20px 0;
 }
 
 .section-p1 {
-    padding: 40px 80px;
+    padding: 100px 25px 50px 25px;
 }
 
 .section-m1 {
@@ -84,19 +84,19 @@ body {
     text-decoration: none;
     font-size: 20px;
     font-weight: 600;
-    color: rgb(57, 52, 52);
-    transition: 0.3s ease;
+    color: black;
+    transition: .2s ease;
 }
 
 #navbar li a:hover,#navbar li a.active {
-    color: aquamarine;
+    color: black;
 }
 
 #navbar li a.active::after,#navbar li a:hover::after {
     content: "";
-    width: 35%;
+    width: 40%;
     height: 2px;
-    background-color: aquamarine;;
+    background-color: black;;
     position: absolute;
     bottom: -4px;
     left: 20px;
@@ -115,7 +115,7 @@ body {
 
 #banner {
     background-image: url(foto/banner.jpg);
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     background-size: cover;
     padding: 0 80px;
@@ -130,11 +130,6 @@ body {
 
 }
 
-#banner h1 {
-    color: black;
-    
-}
-
 #banner button {
     background-image: url(img/button.png);
     background-color: transparent;
@@ -144,11 +139,12 @@ body {
     background-repeat: no-repeat;
     cursor: pointer;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 1px;
 }
 
 #banner button a {
     color: white;
+    font-size: 15px;
     text-decoration: none;
 }
 
@@ -200,7 +196,10 @@ body {
     position: relative;
 }
 
-#produk-1 h2 p {
+#produk-1 h2 {
+    color: black !important;
+}
+#produk-1 p {
     color: black !important;
 }
 
@@ -262,7 +261,7 @@ body {
     padding-top: 7px;
     font-size: 15px;
     font-weight: 700;
-    color: yellowgreen;
+    color: black;
 }
 
 #produk-1 .produk-box .cart {
@@ -283,8 +282,8 @@ body {
 .pre-btn,
 .nxt-btn {
   border: none;
-  width: 10vw;
-  height: 100%;
+  width: 5vw;
+  height: 50%;
   position: absolute;
   top: 0;
   display: flex;
@@ -293,7 +292,7 @@ body {
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
   cursor: pointer;
   z-index: 8;
-  margin-top: 100px
+  margin-top: 250px;
 }
 
 .pre-btn {
@@ -315,11 +314,58 @@ body {
   opacity: 1;
 }
 
+/* FOOTER */
+
+#footer {
+    width: 100%;
+    height: auto;
+    background: black;
+}
+
+.foot-icon i {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+}
+
+.foot-contact {
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
 
 @media (max-width:799px) {
     #header{
         padding: 20px 20px;
     }
+
+    h4 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    p {
+        font-size: 15px;
+    } 
+
+    #banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #banner button a {
+        font-size: 12px;
+    }
+
     #navbar {
         display: flex;
         flex-direction: column;
@@ -366,10 +412,6 @@ body {
     }
 
     #banner {
-        height: 70vh;
-    }
-
-    .produk {
-        width: 450px;
+        height: 100vh;
     }
 }

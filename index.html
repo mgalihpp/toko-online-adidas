@@ -8,23 +8,25 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- FONT -->
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <!-- SCRIPT -->
     <script src="https://kit.fontawesome.com/76976f3323.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
 
     <section id="header">
-        <a href="#"><img src="foto/adidas.png" width="50" height="50" class="logo" alt=""></a>
+        <a href="index.html"><img src="foto/adidas.png" width="50" height="50" class="logo" alt=""></a>
 
         <div>
             <ul id="navbar">
                 <li><a class="active" href="#">Home</a></li>
-                <li><a href="#produk-1">Shop</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html" class="bag"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="#" id="autoclose">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="bag"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
             </ul>
         </div>
@@ -34,7 +36,7 @@
         </div>
     </section>
 
-    <section id="banner">
+    <section id="banner" data-aos="fade-down">
         <h4>Bayar Pake Apa Aja</h4>
         <h2>Bebas Ongkir!</h2>
         <h1>Disemua Produk</h1>
@@ -42,35 +44,280 @@
         <button><a href="#produk-1">Belanja Sekarang!</a></button>
     </section>
 
-    <section id="fitur" class="section-p1" style="display: none;">
-        <div class="fitur-box">
-            <img src="img/features/f1.png" alt="">
-            <h6>Bebas Belanja</h6>
-        </div>
-        <div class="fitur-box">
-            <img src="img/features/f2.png" alt="">
-            <h6>Cepat Waktu</h6>
-        </div>
-        <div class="fitur-box">
-            <img src="img/features/f3.png" alt="">
-            <h6>Hemat Biaya</h6>
-        </div>
-        <div class="fitur-box">
-            <img src="img/features/f4.png" alt="">
-            <h6>Promosi</h6>
-        </div>
-        <div class="fitur-box">
-            <img src="img/features/f5.png" alt="">
-            <h6>Senang</h6>
-        </div>
-        <div class="fitur-box">
-            <img src="img/features/f6.png" alt="">
-            <h6>Pelayanan 24 jam</h6>
+    <!-- ukuran 600x600 penting -->
+    <section id="produk-1" class="section-p1" data-aos="fade-right" data-aos-duration="1500">
+        <h2>Produk Terbaik Kami</h2>
+        <p>Pria</p>
+        <button class="pre-btn"><img src="foto/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="foto/arrow.png" alt=""></button>
+        <div class="produk">
+            <div class="produk-box">
+                <img src="foto/sepatu-1.jpg" alt="">
+                <div class="isi">
+                    <span>Lifestyle</span>
+                    <h5>PHARRELL WILLIAMS HU NMD CHEETAH SHOES</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rp.4,000,000</h4>
+                </div>
+                <i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="produk-box">
+                <img src="foto/sepatu-2.jpg" alt="">
+                <div class="isi">
+                    <span>Sport</span>
+                    <h5>SEPATU NMD_V3</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rp.2,600,000</h4>
+                </div>
+                <i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="produk-box">
+                <img src="foto/sepatu-3.jpg" alt="">
+                <div class="isi">
+                    <span>Running</span>
+                    <h5>SEPATU PUREBOOST GO</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rp.2,000,000</h4>
+                </div>
+                <i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="produk-box">
+                <img src="foto/sepatu-4.jpg" alt="">
+                <div class="isi">
+                    <span>Training</span>
+                    <h5>SEPATU DROPSET TRAINER</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rp.2,200,000</h4>
+                </div>
+                <i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="produk-box">
+                <img src="foto/sepatu-5.jpg" alt="">
+                <div class="isi">
+                    <span>Lifestyle</span>
+                    <h5>SEPATU NMD_V5</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rp.2,300,000</h4>
+                </div>
+                <i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="produk-box">
+                <img src="foto/sepatu-6.jpg" alt="">
+                <div class="isi">
+                    <span>Skateboarding</span>
+                    <h5>SEPATU ADIDAS GRAND COURT X LEGO® 2.0</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rp.1,100,000</h4>
+                </div>
+                <i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="produk-box">
+                <img src="foto/sepatu-7.jpg" alt="">
+                <div class="isi">
+                    <span>Basket</span>
+                    <h5>FORUM 84 LOW AEC SHOES</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rp.2,300,000</h4>
+                </div>
+                <i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="produk-box">
+                <img src="foto/sepatu-8.jpg" alt="">
+                <div class="isi">
+                    <span>Lifestyle</span>
+                    <h5>SEPATU FORUM 84</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rp.1,800,000</h4>
+                </div>
+                <i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
         </div>
     </section>
-
-    <!-- ukuran 600x600 penting -->
-    <section id="produk-1" class="section-p1">
+    <section id="produk-1" class="section-p1" data-aos="fade-right" data-aos-duration="1500">
+        <h2>Produk Terbaik Kami</h2>
+        <p>Pria</p>
+        <button class="pre-btn"><img src="foto/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="foto/arrow.png" alt=""></button>
+        <div class="produk">
+            <div class="produk-box">
+                <img src="foto/sepatu-1.jpg" alt="">
+                <div class="isi">
+                    <span>Lifestyle</span>
+                    <h5>PHARRELL WILLIAMS HU NMD CHEETAH SHOES</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rp.4,000,000</h4>
+                </div>
+                <i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="produk-box">
+                <img src="foto/sepatu-2.jpg" alt="">
+                <div class="isi">
+                    <span>Sport</span>
+                    <h5>SEPATU NMD_V3</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rp.2,600,000</h4>
+                </div>
+                <i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="produk-box">
+                <img src="foto/sepatu-3.jpg" alt="">
+                <div class="isi">
+                    <span>Running</span>
+                    <h5>SEPATU PUREBOOST GO</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rp.2,000,000</h4>
+                </div>
+                <i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="produk-box">
+                <img src="foto/sepatu-4.jpg" alt="">
+                <div class="isi">
+                    <span>Training</span>
+                    <h5>SEPATU DROPSET TRAINER</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rp.2,200,000</h4>
+                </div>
+                <i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="produk-box">
+                <img src="foto/sepatu-5.jpg" alt="">
+                <div class="isi">
+                    <span>Lifestyle</span>
+                    <h5>SEPATU NMD_V5</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rp.2,300,000</h4>
+                </div>
+                <i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="produk-box">
+                <img src="foto/sepatu-6.jpg" alt="">
+                <div class="isi">
+                    <span>Skateboarding</span>
+                    <h5>SEPATU ADIDAS GRAND COURT X LEGO® 2.0</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rp.1,100,000</h4>
+                </div>
+                <i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="produk-box">
+                <img src="foto/sepatu-7.jpg" alt="">
+                <div class="isi">
+                    <span>Basket</span>
+                    <h5>FORUM 84 LOW AEC SHOES</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rp.2,300,000</h4>
+                </div>
+                <i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="produk-box">
+                <img src="foto/sepatu-8.jpg" alt="">
+                <div class="isi">
+                    <span>Lifestyle</span>
+                    <h5>SEPATU FORUM 84</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rp.1,800,000</h4>
+                </div>
+                <i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+        </div>
+    </section>
+    <section id="produk-1" class="section-p1" data-aos="fade-right" data-aos-duration="1500">
         <h2>Produk Terbaik Kami</h2>
         <p>Pria</p>
         <button class="pre-btn"><img src="foto/arrow.png" alt=""></button>
@@ -207,142 +454,23 @@
         </div>
     </section>
 
-    <section id="produk-1" class="section-p1">
-        <h2>Produk Terbaik Kami</h2>
-        <p>Wanita</p>
-        <button class="pre-btn"><img src="foto/arrow.png" alt=""></button>
-        <button class="nxt-btn"><img src="foto/arrow.png" alt=""></button>
-        <div class="produk">
-            <div class="produk-box">
-                <img src="foto/sepatu-1.jpg" alt="">
-                <div class="isi">
-                    <span>Lifestyle</span>
-                    <h5>PHARRELL WILLIAMS HU NMD CHEETAH SHOES</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>Rp.4,000,000</h4>
-                </div>
-                <i class="fa-solid fa-cart-shopping cart"></i></a>
-            </div>
-            <div class="produk-box">
-                <img src="foto/sepatu-2.jpg" alt="">
-                <div class="isi">
-                    <span>Sport</span>
-                    <h5>SEPATU NMD_V3</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>Rp.2,600,000</h4>
-                </div>
-                <i class="fa-solid fa-cart-shopping cart"></i></a>
-            </div>
-            <div class="produk-box">
-                <img src="foto/sepatu-3.jpg" alt="">
-                <div class="isi">
-                    <span>Running</span>
-                    <h5>SEPATU PUREBOOST GO</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>Rp.2,000,000</h4>
-                </div>
-                <i class="fa-solid fa-cart-shopping cart"></i></a>
-            </div>
-            <div class="produk-box">
-                <img src="foto/sepatu-4.jpg" alt="">
-                <div class="isi">
-                    <span>Training</span>
-                    <h5>SEPATU DROPSET TRAINER</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>Rp.2,200,000</h4>
-                </div>
-                <i class="fa-solid fa-cart-shopping cart"></i></a>
-            </div>
-            <div class="produk-box">
-                <img src="foto/sepatu-5.jpg" alt="">
-                <div class="isi">
-                    <span>Lifestyle</span>
-                    <h5>SEPATU NMD_V5</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>Rp.2,300,000</h4>
-                </div>
-                <i class="fa-solid fa-cart-shopping cart"></i></a>
-            </div>
-            <div class="produk-box">
-                <img src="foto/sepatu-6.jpg" alt="">
-                <div class="isi">
-                    <span>Skateboarding</span>
-                    <h5>SEPATU ADIDAS GRAND COURT X LEGO® 2.0</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>Rp.1,100,000</h4>
-                </div>
-                <i class="fa-solid fa-cart-shopping cart"></i></a>
-            </div>
-            <div class="produk-box">
-                <img src="foto/sepatu-7.jpg" alt="">
-                <div class="isi">
-                    <span>Basket</span>
-                    <h5>FORUM 84 LOW AEC SHOES</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>Rp.2,300,000</h4>
-                </div>
-                <i class="fa-solid fa-cart-shopping cart"></i></a>
-            </div>
-            <div class="produk-box">
-                <img src="foto/sepatu-8.jpg" alt="">
-                <div class="isi">
-                    <span>Lifestyle</span>
-                    <h5>SEPATU FORUM 84</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>Rp.1,800,000</h4>
-                </div>
-                <i class="fa-solid fa-cart-shopping cart"></i></a>
+    <section id="footer">
+        <div class="foot">
+            <div class="foot-icon">
+                <ul>
+                    <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://api.whatsapp.com/qr/EGKUQU3S3DYIG1?autoload=1&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                </ul>
+                <input type="email" class="field" placeholder="Email Kamu">
+                <input type="text" class="field" placeholder="Nomor Kamu">
+                <textarea class="field area" placeholder="Pesan"></textarea>
+                <button class="btn">Kirim</button>
             </div>
         </div>
     </section>
-    <script src="script.js"></script>
+
 </body>
+    <script src="script.js"></script>
+     <script>AOS.init();</script>
 </html>
