@@ -35,3 +35,18 @@ produk.forEach((item, i) => {
         item.scrollLeft -= containerWidth;
     })
 })
+
+
+function sendEmail(){
+    Email.send({
+        Host : "adidas.com",
+        Username : "username",
+        Password : "password",
+        To : 'muhammadgalih600@gmail.com',
+        From : "adidas@gmail.com",
+        Subject : "This is subject",
+        Body : "And this is body"
+    }).then(
+        message => alert(message)
+    );
+}
