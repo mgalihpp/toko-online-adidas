@@ -43,7 +43,7 @@ p {
 }
 
 .section-p1 {
-    padding: 110px 25px 50px 25px;
+    padding: 120px 25px 50px 25px;
 }
 
 .section-m1 {
@@ -147,47 +147,6 @@ body {
     color: white;
     font-size: 15px;
     text-decoration: none;
-}
-
-/* fitur */
-
-#fitur {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-#fitur .fitur-box {
-    width: 180px;
-    text-align: center;
-    padding: 25px 15px;
-    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
-    border: 1px solid #cce7d0;
-    border-radius: 4px;
-    margin: 15px 0;
-}
-
-#fitur .fitur-box:hover {
-    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
-}
-
-#fitur .fitur-box img {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-#fitur .fitur-box h6 {
-    display: inline-block;
-    padding: 9px 8px 6px 8px;
-    line-height: 1;
-    border-radius: 4px;
-    color: black;
-    background-color: whitesmoke;
-}
-
-#fitur .fitur-box:nth-child(2) h6{
-    background-color: whitesmoke;
 }
 
 /* produk */
@@ -415,7 +374,7 @@ body {
     margin: 10px 0 10px 0;
 }
 
-h2:after {
+.contact-box h2:after {
     content: '';
     position: absolute;
     left: 50%;
