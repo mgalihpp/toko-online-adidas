@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adidas - Contact</title>
+    <title>Adidas - Home</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
@@ -25,9 +25,9 @@
         <div>
             <ul id="navbar">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="produk.html">Shop</a></li>
+                <li><a href="produk.html" id="autoclose">Shop</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a class="active" href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="#" class="bag"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
             </ul>
@@ -38,18 +38,35 @@
         </div>
     </section>
 
-    <section id="contact">
-        <div class="contact-box">
-            <div class="right">
-                <form action="mailto:muhammadgalih600@gmail.com" method="POST">
-                <h2>Contact Us</h2>
-                <input type="text" class="field" name="nama" placeholder="Nama Kamu">
-                <input type="email" class="field" name="email" placeholder="Email Kamu">
-                <input type="text" class="field" name="nomor" placeholder="Nomor Kamu">
-                <textarea class="field area" name="pesan" placeholder="Pesan"></textarea>
-                <button type="submit" class="btn">Kirim</button>
-                </form>
+    <section id="prodetail">
+        <div class="single-pro-image">
+            <img src="foto/sepatu-3.jpg" width="100%" id="MainImage" alt="">
+            <div class="small-image-produk">
+                <div class="small-img-col">
+                    <img src="foto/sepatu-3.jpg" width="100%" class="small-img" alt="">
+                </div>
             </div>
+        </div>
+
+        <div class="single-pro-detail">
+            <h6><a href="index.html#produk-1">Back</a> / Sepatu</h6>
+            <h4>SEPATU PUREBOOST GO</h4>
+            <h2>Rp. 2,000,000</h2>
+            <select>
+                <option>Ukuran Sepatu</option>
+                <option>38</option>
+                <option>39</option>
+                <option>40</option>
+                <option>41</option>
+                <option>42</option>
+                <option>43</option>
+                <option>44</option>
+                <option>45</option>
+            </select>
+            <input type="number" value="1">
+            <button class="shop-btn"><a href="">Tambahkan Ke Keranjang</a></button>
+            <h4>Detail Produk</h4>
+            <span>Sepatu running Ultraboost ini memberikan kenyamanan dan responsivitas. Kamu akan berlari di atas midsole BOOST yang menghasilkan energi berkelanjutan, dengan sistem Linear Energy Push dan outsole Karet Continental™. Upper sepatu ini dibuat dengan benang tenun beperforma tinggi yang mengandung sedikitnya 50% Parley Ocean Plastic —  limbah plastik reka ulang yang dikumpulkan dari pulau terpencil, pantai, komunitas pesisir, dan garis pantai, agar tidak mencemari lautan kita.</span>
         </div>
     </section>
 
@@ -73,6 +90,5 @@
         <p>COPYRIGHT © 2022 MGALIHPP Adidas - Indonesia</p>
     </section>
 </body>
-     <script src="script.js"></script>
-     <script>AOS.init();</script>
+    <script src="script.js"></script>
 </html>
