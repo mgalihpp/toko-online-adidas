@@ -707,4 +707,7 @@ body {
         width: 100%;
         padding-left: 25px;
     }
+    .small-image-produk {
+        display: none;
+    }
 }
