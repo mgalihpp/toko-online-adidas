@@ -5,6 +5,7 @@ const bar = document.getElementById('bar');
 const nav = document.getElementById('navbar');
 const close = document.getElementById('close');
 const autoclose = document.getElementById('autoclose');
+const shopBtn = document.getElementsByClassName('shop-btn')
 
 if (bar) {
     bar.addEventListener('click', () => {
@@ -22,6 +23,8 @@ if (autoclose) {
         nav.classList.remove('active')
     })
 }
+
+//produk
 
 produk.forEach((item, i) => {
     let containerDimensions = item.getBoundingClientRect();
