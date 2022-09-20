@@ -327,6 +327,7 @@ body {
     right: 10px;
 }
 
+
 /* detail produk */
 
 #prodetail {
@@ -343,6 +344,11 @@ body {
 #prodetail .single-pro-image img {
     border-radius: 20px;
     box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
+    transition: .5s ease-in-out;
+}
+
+#prodetail .single-pro-image img:hover {
+    transform: scale(0.95);
 }
 
 .small-image-produk {
@@ -394,6 +400,12 @@ body {
     width: 200px;
     height: 50px;
     border-radius: 20px;
+    transition: .5s ease-in-out;
+}
+
+#prodetail .single-pro-detail button:hover {
+    background: #232323;
+    transform: scale(0.95);
 }
 
 #prodetail .single-pro-detail button a {
