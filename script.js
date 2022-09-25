@@ -4,8 +4,6 @@ const preBtn = [...document.querySelectorAll('.pre-btn')];
 const bar = document.getElementById('bar');
 const nav = document.getElementById('navbar');
 const close = document.getElementById('close');
-const autoclose = document.getElementById('autoclose');
-const shopBtn = document.getElementsByClassName('shop-btn')
 
 if (bar) {
     bar.addEventListener('click', () => {
@@ -15,11 +13,6 @@ if (bar) {
 
 if (close) {
     close.addEventListener('click', () => {
-        nav.classList.remove('active')
-    })
-}
-if (autoclose) {
-    autoclose.addEventListener('click', () => {
         nav.classList.remove('active')
     })
 }
